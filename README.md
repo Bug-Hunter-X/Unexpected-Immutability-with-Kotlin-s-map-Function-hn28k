@@ -1,0 +1,3 @@
+This repository demonstrates a common misconception when using Kotlin's `map` function with lists.  The `map` function, by design, returns a *new* list containing the transformed elements, leaving the original list unchanged. This behavior is consistent with functional programming principles.  This can lead to subtle bugs if developers expect an in-place modification of the original list.
+
+The `bug.kt` file shows the unexpected behavior, and `bugSolution.kt` provides the correct way to modify a mutable list using `mapIndexedTo` or `mapTo`.
